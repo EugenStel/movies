@@ -1,0 +1,53 @@
+.time_window {
+    display: flex;
+    align-items: center;
+    &-btn {
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+        margin: 0 15px;
+        padding: 8px;
+        width: 90px;
+        border-radius: 30px;
+        transition: all .3s ease;
+        text-transform: capitalize;
+    }
+
+    &-btn:hover {
+        cursor: pointer;
+        background-color: #229d80;
+        color: inherit;
+    }
+}
+
+.time_window_small {
+    display: none;
+}
+
+.selected {
+    background-color: #229d80;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 750px) {
+    .time_window-btn {
+        margin: 0 8px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .time_window_large {
+        display: none;
+    }
+    .time_window_small {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .time_window-btn {
+        margin: 0 5px;
+        width: 60px;
+    }
+}

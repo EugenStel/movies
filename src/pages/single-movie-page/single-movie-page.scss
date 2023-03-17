@@ -1,0 +1,173 @@
+.single_header {
+    position: relative;
+
+    .header_title {
+        text-align: center;
+        font-size: 36px;
+        line-height: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .movie_duration {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        right: 22%;
+        top: 15px;
+    }
+}
+
+.header_image {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 30px;
+    filter: brightness(40%)
+}
+
+.movie_tagline {
+    position: absolute;
+    font-size: 28px;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.cast_title,
+.recommend_title,
+.similar_title,
+.movie_videos-title {
+    margin: 25px 0;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.movie_desc {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 20px 0;
+}
+
+.movie_videos {
+    margin: 60px 0;
+}
+
+.movie_cast {
+    margin-bottom: 15px;
+}
+
+.cast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.actor_img {
+    border-radius: 30px;
+}
+
+.actor_name {
+    margin: 8px 0;
+}
+
+.similar_movies-block,
+.recommend_movies-block {
+    margin-top: 60px;
+}
+
+.movie_video-link {
+    display: block;
+}
+
+.recommend_movies-block {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+    .single_header {
+        .movie_duration {
+            right: 18%;
+            top: 15px;
+        }
+    }
+
+    .header_image {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .single_header {
+        .movie_duration {
+            right: 13%;
+            top: 15px;
+        }
+    }
+
+    .header_image {
+        width: 80%;
+    }
+
+    .movie_tagline {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .movie_desc {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .cast_title,
+    .recommend_title,
+    .similar_title,
+    .movie_videos-title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .single_header {
+        .movie_duration {
+            right: 10%;
+            top: 15px;
+        }
+    }
+
+    .header_image {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .cast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .single_header {
+    
+        .header_title {
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            top: 30%;
+            transform: translate(-50%, -50%);
+        }
+    
+    }
+    .movie_tagline {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .header_image {
+        width: 100%;
+    }
+}

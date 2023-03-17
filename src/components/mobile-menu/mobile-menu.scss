@@ -1,0 +1,43 @@
+.mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .mobile_menu {
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #353340;
+
+        .mobile_menu_list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .mobile_menu_item {
+                display: flex;
+                justify-content: center;
+                .mobile_menu_item-link {
+                    padding: 20px 15px;
+                    text-align: center;
+                    flex-grow: 1;
+                    transition: all .4s ease;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .mobile_menu_item-link:hover {
+                    cursor: pointer;
+                    background-color: #229d80;
+                }
+            }
+        }
+    }
+    .mobile_active {
+        background-color: #229d80;
+    }
+}
